@@ -1,0 +1,128 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif; /* Fuente predeterminada para todo el documento */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina relleno predeterminado */
+    line-height: 1.6; /* Aumenta la altura de línea para mejor legibilidad */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #2e6fa0; /* Color de fondo oscuro */
+    color: white; /* Color de texto blanco */
+    padding: 10px 0; /* Relleno vertical */
+}
+
+/* Estilos de navegación */
+nav ul {
+    list-style-type: none; /* Elimina viñetas de lista */
+    display: flex; /* Usa flexbox para alineación horizontal */
+    justify-content: center; /* Centra elementos de navegación */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaciado horizontal entre elementos de navegación */
+}
+
+nav ul li a {
+    color: white; /* Color de texto de enlaces */
+    text-decoration: none; /* Elimina subrayado de enlaces */
+    transition: color 0.3s; /* Transición suave para cambio de color */
+}
+
+nav ul li a:hover {
+    color: #000000; /* Color de enlace al pasar el ratón */
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 20px; /* Relleno interno */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+/* Estilos de secciones */
+section {
+    margin-bottom: 30px; /* Separación entre secciones */
+    background-color: #a9b5d8; /* Fondo  */
+    padding: 20px; /* Relleno interno */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+/* Diseño flexible de contenido de sección */
+.section-content {
+    display: flex; /* Contenedor flexible */
+    align-items: center; /* Alineación vertical centrada */
+}
+
+.text-content {
+    flex: 1; /* Ocupa espacio disponible */
+    padding-right: 20px; /* Relleno a la derecha */
+}
+
+/* Estilos de contenedor de logo */
+.logo-container {
+    width: 200px; /* Ancho fijo */
+}
+
+.logo-container img {
+    max-width: 100%; /* Responsive */
+    height: auto; /* Mantiene proporción */
+    transition: transform 0.3s; /* Transición para efecto hover */
+}
+
+.logo-container img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+/* Estilos de tabla */
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Elimina espacios entre bordes */
+}
+
+table, th, td {
+    border: 1px solid #000000; /* Bordes de tabla */
+}
+
+th {
+    background-color: #52706c; /* Fondo de encabezados */
+    color: white; /* Color de texto */
+    padding: 10px; /* Relleno interno */
+}
+
+td {
+    padding: 10px; /* Relleno de celdas */
+    text-align: center; /* Alineación centrada */
+}
+
+td img {
+    max-width: 100px; /* Tamaño máximo de imágenes */
+    max-height: 100px;
+}
+
+/* Estilos de pie de página */
+footer {
+    background-color: #344e60; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrado de texto */
+    padding: 10px 0; /* Relleno vertical */
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column; /* Cambio a disposición vertical */
+    }
+
+    .text-content {
+        padding-right: 0; /* Elimina relleno derecho */
+        margin-bottom: 20px; /* Separación con siguiente elemento */
+    }
+
+    table {
+        font-size: 12px; /* Reduce tamaño de fuente */
+    }
+}
